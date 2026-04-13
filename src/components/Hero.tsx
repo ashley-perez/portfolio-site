@@ -9,7 +9,7 @@ export default function Hero() {
         className="w-36 h-36 rounded-full object-cover shrink-0"
       />
       <div>
-        <h1 className="text-5xl font-bold mb-4">Your Name</h1>
+        <h1 className="text-5xl font-bold mb-4">Ash</h1>
         <p className="text-gray-600 text-lg leading-relaxed mb-6">
           Some stuff about me I guess. This is a work in progress.
         </p>
