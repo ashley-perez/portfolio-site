@@ -1,22 +1,13 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
-// import './App.css'
+// importing what we need
+import Hero from './components/Hero'
+import ProjectList from './components/ProjectList'
 
-
-function ATestButton({ title }: { title: string }) {
+export default function App() {
   return (
-    <button>{title}</button>
-  );
+    <main className="min-h-screen bg-gray-50 text-gray-900">
+	{ /* the components list that will be in the app */ }
+      <Hero />
+      <ProjectList />
+    </main>
+  )
 }
-
-export default function MyApp() {
-  return (
-    <div>
-      <h1>Welcome to my placeholder</h1>
-      <ATestButton title="I'm a button" />
-    </div>
-  );
-}
-
