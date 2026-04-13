@@ -2,4 +2,4 @@
 
 Using React, Typescript, TailwindCSS and Vite
 
-Deployed on Cloudflare: 
+Deployed on Cloudflare: https://ashley-perez.pages.dev/
