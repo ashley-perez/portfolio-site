@@ -18,7 +18,7 @@ export default function Hero() {
           <a href="https://x.com" className="text-sm font-medium underline underline-offset-4">X</a>
           <a href="https://instagram.com" className="text-sm font-medium underline underline-offset-4">Instagram</a>
           <a href="https://linkedin.com/..." className="text-sm font-medium underline underline-offset-4">LinkedIn</a>
-          <a href="mailto:ashleyperez428@gmail.com" className="text-sm font-medium underline underline-offset-4">Email</a>
+          <a href="mailto:test@mail.com" className="text-sm font-medium underline underline-offset-4">Email</a>
         </nav>
       </section>
     </header>
