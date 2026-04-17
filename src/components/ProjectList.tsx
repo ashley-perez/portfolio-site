@@ -25,13 +25,13 @@ const projects = [
 // actually chooses the layout, def want to change this
 export default function ProjectList() {
   return (
-    <section className="max-w-3xl mx-auto px-6 pb-16">
+    <article className="max-w-3xl mx-auto px-6 pb-16">
       <h2 className="text-2xl font-semibold mb-6">Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projects.map(project => (
           <ProjectCard key={project.id} project={project} />
         ))}
-      </div>
-    </section>
+      </section>
+    </article>
   )
 }

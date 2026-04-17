@@ -11,20 +11,16 @@ type Project = {
   github: string
 }
 
-type Props = {
-  project: Project
-}
-
-export default function ProjectCard({ project }: Props) {
+export default function ProjectCard({ project }: { project: Project }) {
  
   // the idea of states is controlled with variables
   // isExpanded starts off as false
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
+    <article className="border border-gray-200 rounded-xl overflow-hidden bg-white">
       <img src={project.image} alt={project.name} className="w-full h-40 object-cover" />
-      <div className="p-4">
+      <section className="card">
         <h3 className="font-semibold text-lg mb-1">{project.name}</h3>
         <p className="text-gray-600 text-sm mb-3">{project.description}</p>
 
@@ -48,7 +44,7 @@ export default function ProjectCard({ project }: Props) {
             </a>
           )}
         </div>
-      </div>
-    </div>
+      </section>
+    </article>
   )
 }
