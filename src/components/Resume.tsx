@@ -4,7 +4,7 @@ export default function Resume() {
   // placeholder component for right now
   return (
 		<div className="justify-center">
-		hello world
+		hello world THIS IS THE RESUME COMPONENT
 		</div>
   )
 }

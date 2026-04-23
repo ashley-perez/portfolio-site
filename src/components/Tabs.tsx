@@ -1,28 +1,29 @@
 import {useState } from 'react'
-import ProjectList from './ProjectList'
-import Resume from './Resume'
+// import ProjectList from './ProjectList'
+// import Resume from './Resume'
 
-// getting the state from parent component
-type Props = {
-  activeTab: 'projects' | 'resume'
-  setActiveTab: (tab: 'projects' | 'resume') => void
+// creating a prop to use
+type TabSwitcherProp = {
+  activeTab: 'projects' | 'resume' // variable that holds current state
+  setActiveTab: (tab: 'projects' | 'resume') => void // function that doesnt return anything
 }
 
-export default function Tabs({activeTab, setactiveTab}: Props) {
+// deconstruct the prop and add it to the function signature!!
+export default function Tabs({activeTab, setactiveTab}: TabSwitcherProp) {
 
   // placeholder function to see if the button works
-  const onClick = () => {
-    alert("Button clicked!");
-  };
+  // const onClick = () => {
+  //
+  // };
 
   return (
    <div class="flex border-4 mx-auto px-6 pb-16">
   <button class="hover:bg-gray-400 text-gray-800 border font-bold py-2 px-4"
-   onClick={onClick}>
+   onClick={() => setActiveTab('projects')}>
     projects
   </button>
   <button class="hover:bg-gray-400 text-gray-800 border font-bold py-2 px-4"
-   onClick={onClick}>
+   onClick={() => setActiveTab('resume')}>
     resume
   </button>
 </div>

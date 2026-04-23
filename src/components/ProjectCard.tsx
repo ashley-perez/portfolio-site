@@ -24,7 +24,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <h3 className="font-semibold text-lg mb-1">{project.name}</h3>
         <p className="text-gray-600 text-sm mb-3">{project.description}</p>
 
-		{ /*this only renders when isExpanded is true */ }
+    		{ /* show the bullet points if isExpanded is true */ }
         {isExpanded && (
           <ul className="text-sm text-gray-600 list-disc list-inside mb-3 space-y-1">
             {project.bullets.map((b, i) => <li key={i}>{b}</li>)}
@@ -36,8 +36,10 @@ export default function ProjectCard({ project }: { project: Project }) {
             onClick={() => setIsExpanded(!isExpanded)}
             className="text-sm text-blue-600 underline"
           >
-            {isExpanded ? 'collapse ↑' : 'expand ↓'}
+            {isExpanded ? 'collapse ↑' : 'expand ↓'} 
           </button>
+
+					{ /* show the github link when expanded */ }
           {isExpanded && (
             <a href={project.github} className="text-sm text-gray-500 underline">
               GitHub →
