@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <header className="max-w-4xl mx-auto px-6 py-24 flex gap-12 items-center">
       <img
-        src="/your-photo.jpg"
+        src="/edelgard.png"
         alt="photo of me"
         className="w-36 h-36 rounded-full object-cover shrink-0"
       />
