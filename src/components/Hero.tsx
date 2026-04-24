@@ -13,14 +13,34 @@ export default function Hero() {
         <p className="text-gray-600 text-lg leading-relaxed mb-6">
           Some stuff about me I guess. This is a work in progress.
         </p>
-		{ /* TODO: add some images instead of the names later */ } 
+        {/* TODO: add some images instead of the names later */}
         <nav className="flex gap-4">
-          <a href="https://x.com" className="text-sm font-medium underline underline-offset-4">X</a>
-          <a href="https://instagram.com" className="text-sm font-medium underline underline-offset-4">Instagram</a>
-          <a href="https://linkedin.com/..." className="text-sm font-medium underline underline-offset-4">LinkedIn</a>
-          <a href="mailto:test@mail.com" className="text-sm font-medium underline underline-offset-4">Email</a>
+          <a
+            href="https://x.com"
+            className="text-sm font-medium underline underline-offset-4"
+          >
+            X
+          </a>
+          <a
+            href="https://instagram.com"
+            className="text-sm font-medium underline underline-offset-4"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://linkedin.com/..."
+            className="text-sm font-medium underline underline-offset-4"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="mailto:test@mail.com"
+            className="text-sm font-medium underline underline-offset-4"
+          >
+            Email
+          </a>
         </nav>
       </section>
     </header>
-  )
+  );
 }
