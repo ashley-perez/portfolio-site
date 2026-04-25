@@ -12,19 +12,30 @@ type TabSwitcherProp = {
 // make sure that there are no typos...
 export default function Tabs({ activeTab, setActiveTab }: TabSwitcherProp) {
   return (
-    <div className="flex border-4 mx-auto px-6 pb-16">
+
+    // px is the horizontal alignment of the buttons (left and right)
+    // how far the button is pushed from left alignment 
+    // pb is the vertical space the component takes up
+    <nav className="flex border mx-auto px-6 pb">
+		
       <button
-        className="hover:bg-gray-400 text-gray-800 border font-bold py-2 px-4"
+			  // above classname used to be px-6 and pb-16
+			  // set the state when button is clicked
         onClick={() => setActiveTab("projects")}
+
+				// use the state to change the styling when a button is pressed
+				className={`font-bold py-2 px-4 ${activeTab === 'projects' ? 'underline text-black' : 'text-black'}`}
       >
         projects
       </button>
       <button
-        className="hover:bg-gray-400 text-gray-800 border font-bold py-2 px-4"
         onClick={() => setActiveTab("resume")}
+
+				// again changing the button style based on if clicked or not
+				className={`font-bold py-2 px-4 ${activeTab === 'resume' ? 'underline text-black' : 'text-black'}`}
       >
         resume
       </button>
-    </div>
+    </nav>
   );
 }
