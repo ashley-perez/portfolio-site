@@ -1,7 +1,3 @@
-import { useState } from "react";
-// import ProjectList from './ProjectList'
-// import Resume from './Resume'
-
 // creating a prop to use
 type TabSwitcherProp = {
   activeTab: "projects" | "resume"; // variable that holds current state
