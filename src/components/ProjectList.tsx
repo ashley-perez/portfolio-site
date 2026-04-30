@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import type { Project } from './ProjectCard'
 
 // what goes on the grids
 // might change this later on
