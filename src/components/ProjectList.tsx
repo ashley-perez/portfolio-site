@@ -7,23 +7,25 @@ const projects = [
     id: 1,
     name: "PROJECT 1",
     tags: ["react", "tailwind"],
+    bullets: ["Built with HAHA", "Deployed on YM"],
     description: "lakdsjf;ajdf;ksajfldjl",
     mainMedia: "/placeholder.jpg",
-    bullets: ["Built with HAHA", "Deployed on YM"],
-    image: "/placeholder.jpg",
-    github: "https://github.com/",
+		mediaType: "image",
     extraImages: ["/placeholder.jpg", "/placeholder.jpg", "/placeholder.jpg"],
+    // github: "https://github.com/",
+		// liveUrl:
   },
   {
     id: 2,
     name: "project 2",
     tags: ["react", "tailwind"],
+    bullets: ["Built with HAHA", "Deployed on YM"],
     description: "blahblahblah",
     mainMedia: "/placeholder.jpg",
-    bullets: ["Built with HAHA", "Deployed on YM"],
-    image: "/placeholder.jpg",
-    github: "https://github.com/",
+		mediaType: "image",
     extraImages: [],
+    // github: "https://github.com/",
+		// liveUrl:
   },
   // can add more projects later
 ];
