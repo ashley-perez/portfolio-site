@@ -13,7 +13,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<"projects" | "resume">("projects");
 
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900 max-w-4xl mx-auto px-6">
+    <main className="min-h-screen bg-white text-gray-900 max-w-4xl mx-auto px-6">
       {/* the components list that will be in the app */}
 
       <Hero />
