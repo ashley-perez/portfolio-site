@@ -1,40 +1,39 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 type Project = {
-  id: number // order
-  name: string 
-  tags: string[]      
-  bullets: string[]
-  description: string
-  mainMedia: string // path to media
-  mediaType: 'image' | 'youtube' // specify the type
-  extraImages: string[] // array of imgs
-  github?: string // optional link to github
-  liveUrl?: string // optional link to site or whatever
+  id: number; // order
+  name: string;
+  tags: string[];
+  bullets: string[];
+  description: string;
+  mainMedia: string; // path to media
+  mediaType: "image" | "youtube"; // specify the type
+  extraImages: string[]; // array of imgs
+  github?: string; // optional link to github
+  liveUrl?: string; // optional link to site or whatever
 };
 
 export default function ProjectCard({ project }: { project: Project }) {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     // outer div for the actual card
     <div className=" overflow-hidden bg-white flex flex-col">
-
-      {/* holds left and right columns side by side so that things are actually where i want */ }
+      {/* holds left and right columns side by side so that things are actually where i want */}
       <div className="flex flex-row p-6 gap-6">
-
-
-        {/* LEFT COLUMN */ }
+        {/* LEFT COLUMN */}
         {/* more divs to help break up content the way i want */}
         <section className="flex flex-col gap-3 flex-1">
-
           <h2 className="text-xl font-bold">{project.name}</h2>
 
           {/* tags row — flex-row so tags sit side by side */}
           {/* this is a row INSIDE the left column */}
           <div className="flex flex-row flex-wrap gap-2">
             {project.tags.map((tag, index) => (
-              <span key={index} className="bg-gray-200 px-2 py-1 rounded text-sm">
+              <span
+                key={index}
+                className="bg-gray-200 px-2 py-1 rounded text-sm"
+              >
                 {tag}
               </span>
             ))}
@@ -43,17 +42,18 @@ export default function ProjectCard({ project }: { project: Project }) {
           {/* bullets stack naturally since ul is a block element */}
           <ul className="list-disc pl-5 space-y-1">
             {project.bullets.map((bullet, index) => (
-              <li key={index} className="text-gray-600 text-sm">{bullet}</li>
+              <li key={index} className="text-gray-600 text-sm">
+                {bullet}
+              </li>
             ))}
           </ul>
-
         </section>
 
         {/* RIGHT COLUMNNNNNNNNNN only an img or gif or vid */}
         {/* something visual */}
         <div className="w-72 h-48 shrink-0 overflow-hidden bg-gray-100">
           {/* based on what is passed embed a video or render an img */}
-          {project.mediaType === 'youtube' ? (
+          {project.mediaType === "youtube" ? (
             <iframe // use a link to youtube
               src={project.mainMedia}
               className="w-full h-full"
@@ -68,9 +68,8 @@ export default function ProjectCard({ project }: { project: Project }) {
             />
           )}
         </div>
-
-      </div>  {/* ENDDDDDDDDDDDDDDDDDDD of main row, only button is below */} 
-
+      </div>{" "}
+      {/* ENDDDDDDDDDDDDDDDDDDD of main row, only button is below */}
       {/* EXPANDED SECTIONNNNNNNNNNNNNNNN,,, only renders when isExpanded is true */}
       {/* TODO: add a better animation??? kinda jarring and isnt fluid */}
       {isExpanded && (
@@ -91,31 +90,35 @@ export default function ProjectCard({ project }: { project: Project }) {
               ))}
             </div>
           )}
-					{ /* optional links for git or live project */ }
+          {/* optional links for git or live project */}
           <div className="flex gap-4">
             {project.github && (
-              <a href={project.github} className="text-sm font-medium underline underline-offset-4">
+              <a
+                href={project.github}
+                className="text-sm font-medium underline underline-offset-4"
+              >
                 GitHub →
               </a>
             )}
             {project.liveUrl && (
-              <a href={project.liveUrl} className="text-sm font-medium underline underline-offset-4">
+              <a
+                href={project.liveUrl}
+                className="text-sm font-medium underline underline-offset-4"
+              >
                 Live site →
               </a>
             )}
           </div>
         </div>
       )}
-
       {/* EXPAND BUTTON!!!!!!!!!!!!!!!*/}
       <button
-			  // set true or false based on the button click
+        // set true or false based on the button click
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full py-3 text-sm font-medium bg-white text-gray-500 border-t border-gray-100 hover:bg-gray-50"
       >
-        {isExpanded ? 'hide ↑' : 'learn more ↓'}
+        {isExpanded ? "hide ↑" : "learn more ↓"}
       </button>
-
     </div>
-  )
+  );
 }

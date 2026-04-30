@@ -6,24 +6,24 @@ const projects = [
   {
     id: 1,
     name: "PROJECT 1",
-		tags: ["react", "tailwind"],
+    tags: ["react", "tailwind"],
     description: "lakdsjf;ajdf;ksajfldjl",
-		mainMedia: "/placeholder.jpg",
+    mainMedia: "/placeholder.jpg",
     bullets: ["Built with HAHA", "Deployed on YM"],
     image: "/placeholder.jpg",
     github: "https://github.com/",
-		extraImages: ['/placeholder.jpg', '/placeholder.jpg', '/placeholder.jpg'],
+    extraImages: ["/placeholder.jpg", "/placeholder.jpg", "/placeholder.jpg"],
   },
   {
     id: 2,
     name: "project 2",
-		tags: ["react", "tailwind"],
+    tags: ["react", "tailwind"],
     description: "blahblahblah",
-		mainMedia: "/placeholder.jpg",
+    mainMedia: "/placeholder.jpg",
     bullets: ["Built with HAHA", "Deployed on YM"],
     image: "/placeholder.jpg",
     github: "https://github.com/",
-		extraImages: [],
+    extraImages: [],
   },
   // can add more projects later
 ];
@@ -32,7 +32,7 @@ const projects = [
 export default function ProjectList() {
   return (
     <article className="bg-white  mx-auto px-4 ">
-		  <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
