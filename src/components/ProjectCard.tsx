@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-type Project = {
+export type Project = {
   id: number; // order
   name: string;
   tags: string[];
