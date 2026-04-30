@@ -11,7 +11,7 @@ export default function Hero() {
       <section>
         <h1 className="text-5xl font-bold mb-4">Ashley Perez</h1>
         <p className="text-gray-600 text-lg leading-relaxed mb-6">
-          Some stuff about me I guess. This is a work in progress.
+				Software developer based in the Bay Area! Interested in game development, story telling, education and everything in between! Love learning about new technologies and tech stacks :)
         </p>
         {/* TODO: add some images instead of the names later */}
         <nav className="flex gap-4">

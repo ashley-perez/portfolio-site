@@ -12,10 +12,9 @@ export default function Tabs({ activeTab, setActiveTab }: TabSwitcherProp) {
     // px is the horizontal alignment of the buttons (left and right)
     // how far the button is pushed from left alignment 
     // pb is the vertical space the component takes up
-    <nav className="flex border mx-auto px-6 pb">
+    <menu className="flex mx-auto px-6 pb">
 		
       <button
-			  // above classname used to be px-6 and pb-16
 			  // set the state when button is clicked
         onClick={() => setActiveTab("projects")}
 
@@ -32,6 +31,6 @@ export default function Tabs({ activeTab, setActiveTab }: TabSwitcherProp) {
       >
         resume
       </button>
-    </nav>
+    </menu>
   );
 }
