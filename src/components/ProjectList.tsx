@@ -2,7 +2,9 @@ import ProjectCard from "./ProjectCard";
 
 // what goes on the grids
 // might change this later on
-const projects = [
+// need to specify the type created in ProjectCard
+// might need to clean that up....
+const projects : Project[] = [
   {
     id: 1,
     name: "PROJECT 1",
