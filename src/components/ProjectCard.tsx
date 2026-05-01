@@ -11,6 +11,7 @@ export type Project = {
   extraImages: string[]; // array of imgs
   github?: string; // optional link to github
   liveUrl?: string; // optional link to site or whatever
+  toLearnMore: true | false;
 };
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -24,7 +25,8 @@ export default function ProjectCard({ project }: { project: Project }) {
         {/* LEFT COLUMN */}
         {/* more divs to help break up content the way i want */}
         <section className="flex flex-col gap-3 flex-1">
-          <h2 className="text-xl font-bold">{project.name}</h2>
+          {/* title text */}
+          <h2 className="font-lora text-xl font-bold">{project.name}</h2>
 
           {/* tags row — flex-row so tags sit side by side */}
           {/* this is a row INSIDE the left column */}
@@ -32,7 +34,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             {project.tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-gray-200 px-2 py-1 rounded text-sm"
+                className="bg-gray-200 px-2 py-1 rounded font-lora text-sm"
               >
                 {tag}
               </span>
@@ -42,7 +44,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           {/* bullets stack naturally since ul is a block element */}
           <ul className="list-disc pl-5 space-y-1">
             {project.bullets.map((bullet, index) => (
-              <li key={index} className="text-gray-600 text-sm">
+              <li key={index} className="font-lora text-gray-600 text-sm">
                 {bullet}
               </li>
             ))}
@@ -68,14 +70,17 @@ export default function ProjectCard({ project }: { project: Project }) {
             />
           )}
         </div>
-      </div>{" "}
+      </div>
+
       {/* ENDDDDDDDDDDDDDDDDDDD of main row, only button is below */}
       {/* EXPANDED SECTIONNNNNNNNNNNNNNNN,,, only renders when isExpanded is true */}
       {/* TODO: add a better animation??? kinda jarring and isnt fluid */}
       {isExpanded && (
         <div className="px-6 pb-4 flex flex-col gap-4 border-t border-gray-200 pt-4">
           {/* show a more detialed description of the project */}
-          <p className="text-gray-600 leading-relaxed">{project.description}</p>
+          <p className="font-lora text-gray-600 leading-relaxed">
+            {project.description}
+          </p>
           {/* render the extra imgs in the array */}
           {/* doesnt matter if array is empty there is a length check */}
           {project.extraImages.length > 0 && (
@@ -95,7 +100,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             {project.github && (
               <a
                 href={project.github}
-                className="text-sm font-medium underline underline-offset-4"
+                className="font-lora text-sm font-medium underline underline-offset-4"
               >
                 GitHub →
               </a>
@@ -103,22 +108,26 @@ export default function ProjectCard({ project }: { project: Project }) {
             {project.liveUrl && (
               <a
                 href={project.liveUrl}
-                className="text-sm font-medium underline underline-offset-4"
+                className="font-lora text-sm font-medium underline underline-offset-4"
               >
-                Live site →
+                Live project →
               </a>
             )}
           </div>
         </div>
       )}
+
       {/* EXPAND BUTTON!!!!!!!!!!!!!!!*/}
-      <button
-        // set true or false based on the button click
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full py-3 text-sm font-medium bg-white text-gray-500 border-t border-gray-100 hover:bg-gray-50"
-      >
-        {isExpanded ? "hide ↑" : "learn more ↓"}
-      </button>
+      {/* will only render if i want it to (var set to true or false) */}
+      {project.toLearnMore && (
+        <button
+          // set true or false based on the button click
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="font-lora w-full py-3 text-sm font-medium bg-white text-gray-500 border-t border-gray-100 hover:bg-gray-50"
+        >
+          {isExpanded ? "hide ↑" : "learn more ↓"}
+        </button>
+      )}
     </div>
   );
 }

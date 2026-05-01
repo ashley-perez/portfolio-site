@@ -1,3 +1,7 @@
+import { BsTwitterX } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+
 // creates the Hero part which is the banner
 // pretty basic but will continue to work on it
 export default function Hero() {
@@ -9,37 +13,30 @@ export default function Hero() {
         className="w-36 h-36 rounded-full object-cover shrink-0"
       />
       <section>
-        <h1 className="text-5xl font-bold mb-4">Ashley Perez</h1>
-        <p className="text-gray-600 text-lg leading-relaxed mb-6">
-          Software developer based in the Bay Area! Interested in game
-          development, story telling, education and everything in between! Love
-          learning about new technologies and tech stacks :)
+        <h1 className="font-lora text-5xl font-bold mb-4">Ashley Perez</h1>
+        <p className="font-lora text-gray-600 text-lg leading-relaxed mb-6">
+          Software developer, game designer and educator based in the Bay Area!
+          Love learning about new technologies and tech stacks :)
         </p>
         {/* TODO: add some images instead of the names later */}
         <nav className="flex gap-4">
           <a
-            href="https://x.com"
+            href="https://x.com/wingedgrenade"
             className="text-sm font-medium underline underline-offset-4"
           >
-            X
+            <BsTwitterX />
           </a>
           <a
             href="https://instagram.com"
             className="text-sm font-medium underline underline-offset-4"
           >
-            Instagram
+            <BsInstagram />
           </a>
           <a
-            href="https://linkedin.com/..."
-            className="text-sm font-medium underline underline-offset-4"
+            href="https://www.linkedin.com/in/ashley-perezzz/"
+            className="text-sm font-large underline underline-offset-4"
           >
-            LinkedIn
-          </a>
-          <a
-            href="mailto:test@mail.com"
-            className="text-sm font-medium underline underline-offset-4"
-          >
-            Email
+            <BsLinkedin />
           </a>
         </nav>
       </section>

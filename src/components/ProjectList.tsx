@@ -1,34 +1,81 @@
 import ProjectCard from "./ProjectCard";
-import type { Project } from './ProjectCard'
+import type { Project } from "./ProjectCard";
 
 // what goes on the grids
 // might change this later on
 // need to specify the type created in ProjectCard
 // might need to clean that up....
-const projects : Project[] = [
+const projects: Project[] = [
   {
     id: 1,
-    name: "PROJECT 1",
-    tags: ["react", "tailwind"],
-    bullets: ["Built with HAHA", "Deployed on YM"],
-    description: "lakdsjf;ajdf;ksajfldjl",
+    name: "Lamplight",
+    tags: ["Unity", "C#", "Developer", "Level Design", "Producer"],
+    bullets: [
+      "3D puzzle platformer made in Unity",
+      "Shipped to Steam marketplace, adhering to Steam's guidlines and build specifications",
+      "Designed, created and prototyped levels and game mechanics",
+    ],
+    description:
+      "Developed, prototyped, designed levels and game mechanics in Unity. Collaborated with peers to create an immersive experience. Adhered to design standards to make game more accessibe as well as added localization!",
     mainMedia: "/placeholder.jpg",
-		mediaType: "image",
-    extraImages: ["/placeholder.jpg", "/placeholder.jpg", "/placeholder.jpg"],
+    mediaType: "image",
+    extraImages: [],
     // github: "https://github.com/",
-		// liveUrl:
+    liveUrl: "https://store.steampowered.com/app/3011380/Lamplight/",
+    toLearnMore: true,
   },
   {
     id: 2,
-    name: "project 2",
-    tags: ["react", "tailwind"],
-    bullets: ["Built with HAHA", "Deployed on YM"],
-    description: "blahblahblah",
+    name: "Personal Portfolio Site",
+    tags: ["React", "Tailwind", "Vite", "Web Development"],
+    bullets: [
+      "Developed and designed a personal site using React, Typescript, TailwindCSS",
+      "Created resuable components",
+      "Learned and applied React concepts including props, state management and conditional rendering",
+      "Deployed using Cloudflare",
+      "Continuously iterating and improving the UI/UX and project structure",
+    ],
+    description: "",
     mainMedia: "/placeholder.jpg",
-		mediaType: "image",
+    mediaType: "image",
     extraImages: [],
+    toLearnMore: false,
     // github: "https://github.com/",
-		// liveUrl:
+    // liveUrl:
+  },
+  {
+    id: 3,
+    name: 'Rewind Prototype - "Old TV"',
+    tags: ["Unity", "C#", "Developer", "Designer"],
+    bullets: [
+      "Developed main rewind mechanic using Linked Lists as the main data structure to store and discard object positions",
+      "Able to rewind all events that took place in the last 6 seconds",
+      "Ideation came from collaborative brainstorming methods from: A Playful Production Process",
+    ],
+    description: "",
+    mainMedia: "/placeholder.jpg",
+    mediaType: "image",
+    extraImages: [],
+    toLearnMore: false,
+    // github: "https://github.com/",
+    // liveUrl:
+  },
+  {
+    id: 4,
+    name: "Hey Dandy",
+    tags: ["Phaser", "Javascript", "Developer", "Producer"],
+    bullets: [
+      "Endless runner created using the Phaser Library",
+      "Created and developed main game mechanic",
+      "Led gameplay development and collaboratively worked on design elements and visual style",
+    ],
+    description: "",
+    mainMedia: "/heydandy.png",
+    mediaType: "image",
+    extraImages: [],
+    toLearnMore: false,
+    // github: "https://github.com/",
+    // liveUrl:
   },
   // can add more projects later
 ];

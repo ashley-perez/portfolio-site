@@ -16,14 +16,14 @@ export default function Tabs({ activeTab, setActiveTab }: TabSwitcherProp) {
         // set the state when button is clicked
         onClick={() => setActiveTab("projects")}
         // use the state to change the styling when a button is pressed
-        className={`font-bold py-2 px-4 ${activeTab === "projects" ? "underline text-black" : "text-black"}`}
+        className={`font-lora font-bold py-2 px-4 ${activeTab === "projects" ? "underline text-black" : "text-black"}`}
       >
         projects
       </button>
       <button
         onClick={() => setActiveTab("resume")}
         // again changing the button style based on if clicked or not
-        className={`font-bold py-2 px-4 ${activeTab === "resume" ? "underline text-black" : "text-black"}`}
+        className={`font-lora font-bold py-2 px-4 ${activeTab === "resume" ? "underline text-black" : "text-black"}`}
       >
         resume
       </button>
