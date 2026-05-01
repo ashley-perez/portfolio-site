@@ -18,23 +18,16 @@ export default function Hero() {
           Software developer, game designer and educator based in the Bay Area!
           Love learning about new technologies and tech stacks :)
         </p>
-        {/* TODO: add some images instead of the names later */}
         <nav className="flex gap-4">
-          <a
-            href="https://x.com/wingedgrenade"
-            className="text-sm font-medium underline underline-offset-4"
-          >
+          <a href="https://x.com/wingedgrenade" className="text-2xl pr-4">
             <BsTwitterX />
           </a>
-          <a
-            href="https://instagram.com"
-            className="text-sm font-medium underline underline-offset-4"
-          >
+          <a href="https://instagram.com" className="text-2xl pr-4">
             <BsInstagram />
           </a>
           <a
             href="https://www.linkedin.com/in/ashley-perezzz/"
-            className="text-sm font-large underline underline-offset-4"
+            className="text-2xl pr-4"
           >
             <BsLinkedin />
           </a>
