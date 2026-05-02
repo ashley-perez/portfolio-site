@@ -20,7 +20,7 @@ const cards: ResumeInfo[] = [
   },
   {
     id: 2,
-    name: "Baskin Engineering",
+    name: "University of California, Santa Cruz",
     time: "September 2023 - December 2024",
     position: "Peer Mentor - MESA Engineering Program",
     location: "Santa Cruz, CA",
@@ -49,7 +49,7 @@ const cards: ResumeInfo[] = [
   {
     id: 4,
     name: "Baskin Engineering",
-    time: "June 2023 - December 2023",
+    time: "June 2023 - September 2023",
     position: "Coding Tutor - CUBE",
     location: "Santa Cruz, CA",
     bullets: [
