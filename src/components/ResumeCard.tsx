@@ -12,10 +12,8 @@ export type ResumeInfo = {
 // basically based off of ProjectCard
 export default function ResumeCard({ info }: { info: ResumeInfo }) {
   return (
-    <div className="border-gray-400 overflow-hidden bg-white flex flex-col">
-
+    <div className="border-b overflow-hidden bg-white flex flex-col">
       <div className="p-6 gap-6">
-
         <h2 className="font-lora text-xl font-bold">
           {info.position}{" "}
           <span className="font-lora text-xl text-gray-600 font-normal">
