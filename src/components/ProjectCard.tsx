@@ -53,7 +53,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
         {/* RIGHT COLUMNNNNNNNNNN only an img or gif or vid */}
         {/* something visual */}
-        <div className="w-72 h-48 shrink-0 overflow-hidden bg-gray-100">
+        <div className="w-72 h-48 shrink-0 overflow-hidden bg-white">
           {/* based on what is passed embed a video or render an img */}
           {project.mediaType === "youtube" ? (
             <iframe // use a link to youtube
@@ -66,7 +66,8 @@ export default function ProjectCard({ project }: { project: Project }) {
             <img // or just render an img
               src={project.mainMedia}
               alt={project.name}
-              className="w-full h-full object-cover"
+              // dont stretch or crop the img with object-contain
+              className="w-full h-full object-contain"
             />
           )}
         </div>

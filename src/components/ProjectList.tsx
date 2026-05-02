@@ -36,7 +36,7 @@ const projects: Project[] = [
       "Continuously iterating and improving the UI/UX and project structure",
     ],
     description: "",
-    mainMedia: "/placeholder.jpg",
+    mainMedia: "/react-logo.png",
     mediaType: "image",
     extraImages: [],
     toLearnMore: false,
