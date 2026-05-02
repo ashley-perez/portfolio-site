@@ -53,7 +53,7 @@ const projects: Project[] = [
       "Ideation came from collaborative brainstorming methods from: A Playful Production Process",
     ],
     description: "",
-    mainMedia: "/placeholder.jpg",
+    mainMedia: "/old-tv.gif",
     mediaType: "image",
     extraImages: [],
     toLearnMore: false,
