@@ -22,9 +22,11 @@ export default function Hero() {
           <a href="https://x.com/wingedgrenade" className="text-2xl pr-4">
             <BsTwitterX />
           </a>
+					{ /* not ready yet 
           <a href="https://instagram.com" className="text-2xl pr-4">
             <BsInstagram />
           </a>
+				   */ }
           <a
             href="https://www.linkedin.com/in/ashley-perezzz/"
             className="text-2xl pr-4"
