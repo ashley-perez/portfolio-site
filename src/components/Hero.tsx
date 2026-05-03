@@ -1,6 +1,6 @@
 import { BsTwitterX } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-import { BsLinkedin } from "react-icons/bs";
+// import { BsLinkedin } from "react-icons/bs";
 
 // creates the Hero part which is the banner
 // pretty basic but will continue to work on it
