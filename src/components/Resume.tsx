@@ -56,7 +56,7 @@ const cards: ResumeInfo[] = [
       "Tutored for Coding Unafraid at Baskin Engineering program to help students from underrepresented backgrounds (e.g., MESA, EOP) to succeed in Data Structures and Algorithms coursework",
       "Held office hours to tutor students in C++ and data structures and algorithms concepts such as linked lists, stacks, queues, etc",
       "Helped students get familiar with Linux, terminal usage, and data visualization",
-      "Supported classroom instruction by attending session and reinforcing course matericals outside of lectures",
+      "Supported classroom instruction by attending session and reinforcing course materials outside of lectures",
     ],
     // github:,
     // liveurl:,
