@@ -1,5 +1,5 @@
 import { BsTwitterX } from "react-icons/bs";
-// import { BsInstagram } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 
 // creates the Hero part which is the banner
@@ -22,11 +22,9 @@ export default function Hero() {
           <a href="https://x.com/wingedgrenade" className="text-2xl pr-4">
             <BsTwitterX />
           </a>
-					{ /* not ready yet 
-          <a href="https://instagram.com" className="text-2xl pr-4">
+          <a href="https://instagram.com/wingedgrenade" className="text-2xl pr-4">
             <BsInstagram />
           </a>
-				   */ }
           <a
             href="https://www.linkedin.com/in/ashley-perezzz/"
             className="text-2xl pr-4"

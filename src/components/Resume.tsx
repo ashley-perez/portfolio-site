@@ -70,7 +70,7 @@ const cards: ResumeInfo[] = [
     bullets: [
       "Created and managed web pages for diversity and inclusion initiatives within Baskin Engineering using a content management system (CMS)",
       "Met regularly with supervisor to plan webpage timelines and improve promotion of diversity initiatives within Baskin",
-      "Contributed to student engagement efforts by supporting online presence and program promotion",
+			"Contributed to student engagement by enhancing student organizations’ online presence and promoting programs",
     ],
     // github:,
     // liveurl:,
